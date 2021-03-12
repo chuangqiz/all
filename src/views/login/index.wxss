@@ -1,0 +1,73 @@
+.login-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f8;
+}
+.login-page .login {
+  width: 100%;
+  height: 50%;
+  background-color: #292f4c;
+}
+.login-page .login .login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  padding: 46px 100px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.login-page .login .login-box .title h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.login-page .login .login-box .form {
+  margin-top: 40px;
+}
+.login-page .login .login-box .form li {
+  height: 56px;
+  width: 100%;
+  border: 1px solid #DADADB;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.login-page .login .login-box .form li.active {
+  border-color: #2dc9eb;
+}
+.login-page .login .login-box .form li input {
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+  color: #333;
+  background: transparent;
+}
+.login-page .login .login-box .form .mobile-item .clear-btn {
+  width: 26px;
+  height: 26px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAEAUlEQVRoQ+1aXahMURTe+8zTKF54EFEGhSHuzD53EspEoTwIL8qDnyghD8o/Jf/iwU/y4PdB6paUFw+U8vdw9zojiiJ/L4p40RHCOVt7Wft2mjtzZ86ZOfeys1/WnJm91prv+87eZ++1D2cJGwAM0q6c88XaKqXQMsYmkh1JdjDZX2Tfk31L9h75X9bWdd3nCf8SuvGkztYAAoBtRMJmssOSklLH77r+PggCzFMqlV7EiR9boX8eUHd3d57GyiWyIg5jbei7SccQQpxsJlZDhawBVKlUpmtGwjDEWYgxlmmGobT6cM5P69jFYnFjXznqKmQNIClljsbKq7TYbjHuHhpT+2rF6aWQdYAA4Ckhn9Qik6m6K6Vm6gSu6z6IJuqlkDWAAGArIT2cKrXtC/6RZr3hNOZDtCa+NYC6urrw+ZLL5X4QOKd9JKYfiXO+ipS6iApZB0hKuZruwXMx+cTnVBiGZW0dx1lD/rubicM5v6D7KaXM2EWGGWMLm/GP9MH9k+/7kxGHjYBuk0JzYjLzRvcXQuDKwjTP8/YT8zvrxMM7QQhhFMVuUsqH9D9wDRm3hWE4wyhkFyAAeE1sjInLCvXHHWWxWJxADCttAcCstXZRvyukzPJoHgC4S9ezEuY3busxv42AvhLEbIsMPdb+vu/jjrZcLmOVR0q5RFvXda9VKXOHrme3mBfdOecHjELWAcJ7vo3ts47lOM54bQuFAq65lFK4zPI8z1RxxrUxpw51wij0H1BfzHLOb5AiS2lW+xnt73neefod12BtbMdTUehvAPSJWBraIls1VwAAcFDHzWazaPP5/BdtpZR/ZiXOd7SY17hjpVU/h+wCJKWUxFTSiiieGgghVlSNlVs0VubS90+09X2/pG25XP6uLQAcot9NzTyRYEqpRYjDOkAAcIwoMacJzTKEjAshpkYdAOA+XePqt0Yz5z9TyB9nQSnlTbpT5jf7B6jfN7KjzRiyDtBYQvgyJjMfaIxsIb9lMRl+RP5Hyc/sdOPWA8+S0uuMQnYBMqp4nlc9K8UUbGC6ZzIZ3Md1dHTgmW1PXc46QJVKZYRGGIbhu4HhOnZWrPAKIbZHPXsUsg6QQQkAOFswxs7E5qx/HHBnLISYVitdrdMHuwBFZr1T9JzY0D/EN8xi3kDB6pIQAnfG1a3uGavneXYBiowpPNNkjO1tyGE6HSoUdh4pY7Y7NbM1fE8BAOwCZGiQUi7QnznnWF1hjGFVJ8V2hBSJtU9qqJC1gAwwU18DgJWk2Fr6DXeiCRrOXpzzq2SxNlEoFJ4liBX/fTnrANVjzbxKEwQBvtHoOM4obZVSQ8jHnOEaRfAEMAgC0Lazs9M8Z5II0+PT9BhqlOVvAfQb4v1NRfQLANIAAAAASUVORK5CYII=") center center no-repeat;
+  background-size: 13px;
+  cursor: pointer;
+  display: none;
+}
+.login-page .login .login-box .form .mobile-item .clear-btn.active {
+  display: block;
+}
+.login-page .login .enter {
+  margin-top: 59px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  width: 100%;
+  background-color: #999cac;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}

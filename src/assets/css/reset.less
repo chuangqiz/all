@@ -1,0 +1,99 @@
+/* 初始化 */
+body,
+div, p, span,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+form, input, textarea, select,
+dl, dt, dd,
+a, img, button,
+table, th, tr, td, tbody,
+header, nav, menu, footer, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica, "Open Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  font-family: "Microsoft YaHei", "微软雅黑", Helvetica, "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #292F4C;
+  background: #fff;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+dl, dt, dd, em, a, b, u, i, q, s {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+q::after,
+q::before {
+  content: '';
+}
+
+
+ul, ol, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+input {
+  background: transparent;
+}
+::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+:-moz-placeholder {
+  color: #b9b9b9;
+}
+::-moz-placeholder{
+  color: #b9b9b9;
+}
+:-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
