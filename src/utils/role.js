@@ -3,18 +3,18 @@ const cloudRoles = [
   {
     name: 'admin', // 超级管理员
     grade: 1,
-    name: ['basics', 'manage'],
+    menus: ['basics', 'manage'],
     routers: ['']
   },
   {
-    name: 'person', //普通
+    name: 'person', // 普通
     grade: 2,
-    name: ['basics'],
+    menus: ['basics'],
     routers: ['']
   }
 ]
 
-const roleGrade = function (name) {
+const rolesGrade = function (name) {
   const n = _.findIndex(cloudRoles, item => item.name === name)
   if (n >= 0) {
     return cloudRoles[n].grade
@@ -25,5 +25,5 @@ const roleGrade = function (name) {
 
 export {
   cloudRoles,
-  roleGrade
+  rolesGrade
 }

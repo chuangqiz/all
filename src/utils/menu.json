@@ -1,5 +1,26 @@
 [
   {
-    ""
+    "type": 0,
+    "title": "主体信息管理",
+    "name": "basics",
+    "items": [
+      {
+        "icon": "",
+        "index": "1",
+        "title": "主体市场",
+        "items": [
+          {
+            "path": "/basics/market/wholesale",
+            "name": "WholesaleMarket",
+            "title": "批发市场"
+          },
+          {
+            "path": "/basics/market/retail",
+            "name": "RetailMarket",
+            "title": "农贸市场"
+          }
+        ]
+      }
+    ]
   }
 ]

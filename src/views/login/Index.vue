@@ -48,6 +48,7 @@
 </template>
 
 <script>
+import { rolesGrade } from '../../utils/role'
 export default {
   data () {
     return {
@@ -99,7 +100,15 @@ export default {
         uid: uid
       }).then(result => {
         console.log(result)
-        this.$router.push('/layout')
+        if (result.status === 200) {
+          const userRole = result.data.role
+          this.$store.dispatch('setUserRole', userRole)
+          rolesGrade(userRole.name) >= 0
+            ? this.$router.push('/')
+            : this.$message.error('你没有相关权限')
+        } else {
+          this.$message.error('你没有相关权限')
+        }
       })
     }
   }
